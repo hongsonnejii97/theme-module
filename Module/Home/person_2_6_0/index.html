@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SCI FRAMEWORK</title>
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/person_2_4_1.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+	
+</head>
+
+<body>
+
+    <style>
+        .person_2_6_0__title p {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+        }
+
+        .person_2_6_0 {
+            padding: 30px 0
+        }
+
+        .person_2_6_0__title p {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #015440;
+            padding-bottom: 10px;
+            margin-bottom: 10px
+        }
+
+        .person_2_6_0__title p::after {
+            display: block;
+            width: 100px;
+            border-bottom: 1px solid #ddd;
+            content: "";
+            margin-top: 10px
+        }
+
+        .person_2_6_0__box {
+            margin-top: 10px
+        }
+
+        .person_2_6_0__box .item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between
+        }
+
+        .person_2_6_0__box .item .pic {
+            width: 25%
+        }
+
+        .person_2_6_0__box .item .pic img {
+            width: 100%
+        }
+
+        .person_2_6_0__box .item .text {
+            width: 70%;
+            padding: 10px 10px 10px 20px;
+            border: 1px #058a66 dotted;
+            border-radius: 5px;
+            position: relative
+        }
+
+        .person_2_6_0__box .item .text p {
+            font-style: italic
+        }
+
+        .person_2_6_0__box .item .text a {
+            color: #015440
+        }
+
+        .person_2_6_0__box .item .text::before {
+            border-right: 8px solid #058a66;
+            border-left: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-top: 8px solid transparent;
+            width: 0;
+            height: 0;
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 20px;
+            display: block
+        }
+
+        @media (max-width: 414px) {
+            .person_2_6_0 {
+                padding: 10px 0 20px
+            }
+
+            .person_2_6_0__title {
+                text-align: center
+            }
+
+            .person_2_6_0__title p {
+                font-size: 16px
+            }
+
+            .person_2_6_0__title p::after {
+                margin: 10px auto 0
+            }
+
+            .person_2_6_0__box .item .text p {
+                font-size: 14px
+            }
+
+            .person_2_6_0__box .item .text a {
+                font-size: 14px
+            }
+        }
+
+        @media (max-width: 360px) {
+            .person_2_6_0__box .item .text p {
+                font-size: 12px
+            }
+
+            .person_2_6_0__box .item .text a {
+                font-size: 12px
+            }
+        }
+    </style>
+
+    
+    <section class="person_2_6_0">
+        <div class="container">
+            <div class="person_2_6_0__title">
+                <p>Ý kiến khách hàng</p>
+            </div>
+            <div class="person_2_6_0__box">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="media/images/person_2_6_0/pers-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Tóc mỏng do bẩm sinh và rụng nhiều nên mỗi lần đi chơi hay dự sự kiện là tôi đều phải đội tóc giả.... Tôi thấy rằng ai cũng mong muốn có bộ tóc dày mượt và ...</p>
+                            <a href="#">Chi tiết <i class="icon-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="media/images/person_2_6_0/pers-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Tóc mỏng do bẩm sinh và rụng nhiều nên mỗi lần đi chơi hay dự sự kiện là tôi đều phải đội tóc giả.... Tôi thấy rằng ai cũng mong muốn có bộ tóc dày mượt và ...</p>
+                            <a href="#">Chi tiết <i class="icon-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="media/images/person_2_6_0/pers-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Tóc mỏng do bẩm sinh và rụng nhiều nên mỗi lần đi chơi hay dự sự kiện là tôi đều phải đội tóc giả.... Tôi thấy rằng ai cũng mong muốn có bộ tóc dày mượt và ...</p>
+                            <a href="#">Chi tiết <i class="icon-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+
+<script>
+   $('.person_2_6_0 .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        items:2,
+        nav: false,
+        dots: true,
+        responsive: {
+        0: {
+            items: 1
+        },
+        414: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        1024: {
+            items: 2
+        },
+        }
+    });
+</script>
+
+</html>

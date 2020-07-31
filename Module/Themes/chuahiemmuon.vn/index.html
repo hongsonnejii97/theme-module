@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SCI FRAMEWORK</title>
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+	
+</head>
+
+<body>
+
+    <style>
+        .header_1_0_2 {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .header_1_0_2_box_2__menu__menuSub .arr::before {
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: 400;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            margin-left: .2em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .header_1_0_2 {
+            position: fixed;
+            z-index: 9;
+            width: 100%;
+            top: 0;
+            background: url(images/head-bg.png) center bottom no-repeat
+        }
+
+        .header_1_0_2_box_1 {
+            background-color: #fff
+        }
+
+        .header_1_0_2_box_1 .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .header_1_0_2_box_1_left,
+        .header_1_0_2_box_1_right {
+            display: flex;
+            align-items: center
+        }
+
+        .header_1_0_2_box_1__logo {
+            height: 90px;
+            padding-top: 5px;
+            margin-right: 50px;
+            position: relative
+        }
+
+        .header_1_0_2_box_1__title {
+            color: #00ABE5
+        }
+
+        .header_1_0_2_box_1__title h2 {
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 5px 0 0
+        }
+
+        .header_1_0_2_box_1__title p {
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600
+        }
+
+        .header_1_0_2_box_1__address ul {
+            list-style: none
+        }
+
+        .header_1_0_2_box_1__address ul li {
+            color: #000;
+            font-size: 14px
+        }
+
+        .header_1_0_2_box_1__address ul li i {
+            color: #00ABE5;
+            font-size: 14px;
+            margin-right: 5px
+        }
+
+        .header_1_0_2_box_1__regkham {
+            display: none
+        }
+
+        .header_1_0_2_box_1__regtv {
+            font-size: 15px;
+            display: block;
+            background: #00ABE5;
+            color: #fff;
+            margin-bottom: 5px;
+            text-align: center;
+            padding: 2px 25px
+        }
+
+        .header_1_0_2_box_1__ser {
+            border: 1px solid #EF4527;
+            padding-left: 10px;
+            position: relative;
+            outline: none
+        }
+
+        .header_1_0_2_box_1__ser::placeholder {
+            font-style: italic;
+            font-size: 14px
+        }
+
+        .header_1_0_2_box_1__button {
+            position: absolute;
+            right: 14px;
+            background: none;
+            border: none;
+            outline: none;
+            color: #EF4527;
+            cursor: pointer
+        }
+
+        .header_1_0_2_box_1__call {
+            margin-left: 25px;
+            text-align: center
+        }
+
+        .header_1_0_2_box_1__call h2 {
+            text-transform: uppercase;
+            color: #EF4527;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 10px 0 0
+        }
+
+        .header_1_0_2_box_1__call p {
+            color: #fff;
+            font-size: 18px
+        }
+
+        .header_1_0_2_box_1__call a {
+            color: #000
+        }
+
+        .header_1_0_2_box_1__search {
+            margin-left: 30px;
+            margin-top: 5px
+        }
+
+        .header_1_0_2_box_1__search__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #EF4324;
+            padding: 6px;
+            border-radius: 50%;
+            color: #fff;
+            width: 35px;
+            height: 35px;
+            margin-left: 30px
+        }
+
+        .header_1_0_2_box_1__search__icon i {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .header_1_0_2_box_1 .iconMid {
+            display: none
+        }
+
+        .header_1_0_2_box_2 {
+            background-color: #E1EAF5;
+            padding: 10px 0
+        }
+
+        .header_1_0_2_box_2 .container {
+            display: flex;
+            align-items: center
+        }
+
+        .header_1_0_2_box_2__logosb {
+            display: none
+        }
+
+        .header_1_0_2_box_2__logosb img {
+            max-width: 90%;
+            margin: 20px 0 0
+        }
+
+        .header_1_0_2_box_2__menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .header_1_0_2_box_2__menu__menuSub .menu-icon {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            text-align: right
+        }
+
+        .header_1_0_2_box_2__menu__menuSub .arr::before {
+            content: '\e88f';
+            display: none;
+            position: absolute;
+            bottom: 5px;
+            left: 40px;
+            text-align: center;
+            color: #f16749
+        }
+
+        .header_1_0_2_box_2__menu__menuSub:hover .arr::before {
+            display: block
+        }
+
+        .header_1_0_2_box_2__menu__menuSub:hover .header_1_0_2_box_2__menu__menuSubBox {
+            display: block;
+            animation: opac 0.4s
+        }
+
+        .header_1_0_2_box_2__menu__menuSub:hover>a {
+            color: #e3a261
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox {
+            display: none;
+            position: absolute;
+            width: 100%;
+            right: 0px;
+            top: 30px;
+            background: #0d4b8a;
+            padding: 15px 25px;
+            color: #fff;
+            border-radius: 8px
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox ul {
+            list-style: none;
+            padding: 0
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox ul.mnsub {
+            padding: 42px 0 0
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox ul li {
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+            padding: 5px 0;
+            font-size: 13px
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox ul li:last-child {
+            border: none
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox a {
+            color: #fff;
+            transition: 0.1s
+        }
+
+        .header_1_0_2_box_2__menu__menuSubBox a:hover {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        .header_1_0_2_box_2__menu__menuSubTitle {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 10px
+        }
+
+        .header_1_0_2_box_2__menu__menuSubTitle:after,
+        .header_1_0_2_box_2__menu__menuSubTitle::before {
+            content: '';
+            display: block;
+            position: absolute
+        }
+
+        .header_1_0_2_box_2__menu__menuSubTitle:before {
+            width: 80px;
+            height: 3px;
+            background: #fff;
+            left: 0;
+            bottom: -1px
+        }
+
+        .header_1_0_2_box_2__menu__menuSubTitle:after {
+            width: 100px;
+            width: 100%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+            left: 0;
+            bottom: 0
+        }
+
+        .header_1_0_2_box_2__menu__title {
+            padding: 15px;
+            font-weight: 600;
+            font-size: 15px;
+            position: relative
+        }
+
+        .header_1_0_2_box_2__menu .mntt {
+            color: #fff;
+            font-size: 15px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            border-bottom: 1px dotted #355b7d;
+            position: relative;
+            margin-bottom: 10px
+        }
+
+        .header_1_0_2_box_2__menu .mntt::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 70px;
+            height: 3px;
+            background: #fff
+        }
+
+        .header_1_0_2_box_2__regist {
+            border-radius: 34px;
+            color: #fff;
+            padding: 5px 20px 5px 20px;
+            background: #EF4527;
+            margin-left: 90px;
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .header_1_0_2_box_2.active {
+            display: block;
+            animation: animateleft 0.4s
+        }
+
+        .header_1_0_2_box_3 {
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            content: '';
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            animation: opac 0.4s
+        }
+
+        .header_1_0_2_box_3.active {
+            display: block
+        }
+
+        .header_1_0_2.menufix {
+            animation: animatetop 0.4s;
+            background: #fff;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1)
+        }
+
+        @media (max-width: 1024px) {
+            .header_1_0_2.menufix {
+                animation: none
+            }
+        }
+
+        .header_1_0_2.menufix .header_1_0_2_box_1 {
+            display: none
+        }
+
+        .header_1_0_2.menufix .header_1_0_2_box_2 {
+            background-color: #1D1E4F
+        }
+
+        .header_1_0_2.menufix .header_1_0_2_box_2__menu__title {
+            color: #fff
+        }
+
+        @media (max-width: 1024px) {
+            .header_1_0_2 {
+                background-color: #fff;
+                height: 65px
+            }
+
+            .header_1_0_2_box_1 .container {
+                justify-content: center;
+                position: relative
+            }
+
+            .header_1_0_2_box_1__title {
+                display: none
+            }
+
+            .header_1_0_2_box_1_left {
+                width: 100%
+            }
+
+            .header_1_0_2_box_1_right {
+                display: none
+            }
+
+            .header_1_0_2_box_1__regkham {
+                position: absolute;
+                background: #EF4324;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 8px 30px;
+                border-radius: 10px;
+                right: 150px;
+                display: block
+            }
+
+            .header_1_0_2_box_1__logo {
+                text-align: center;
+                width: 100px;
+                margin: 0 0 0 30px;
+                position: relative;
+                display: block
+            }
+
+            .header_1_0_2_box_1__logo img {
+                position: absolute;
+                top: 10px;
+                left: -40px;
+                height: 70px
+            }
+
+            .header_1_0_2_box_1__logo::after {
+                display: none
+            }
+
+            .header_1_0_2_box_1__search__icon {
+                display: none
+            }
+
+            .header_1_0_2_box_1 .iconMid {
+                display: block
+            }
+
+            .header_1_0_2_box_1 .siteHeaderNav {
+                position: absolute;
+                right: 70px;
+                color: #565656;
+                font-size: 35px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderNav span {
+                font-size: 12px;
+                display: block;
+                margin-top: -5px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderCall {
+                position: absolute;
+                right: 0;
+                color: #565656;
+                font-size: 28px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 5px;
+                margin-top: 10px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderCall span {
+                font-size: 12px;
+                display: block;
+                margin-top: -10px
+            }
+
+            .header_1_0_2_box_2 {
+                display: none;
+                width: 270px;
+                background: #fff;
+                position: fixed;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 3;
+                overflow: auto;
+                padding-bottom: 20px
+            }
+
+            .header_1_0_2_box_2 .container {
+                display: block;
+                width: 270px
+            }
+
+            .header_1_0_2_box_2__logosb {
+                text-align: left
+            }
+
+            .header_1_0_2_box_2__menu {
+                display: block;
+                margin: 30px 0
+            }
+
+            .header_1_0_2_box_2__menu__menuSub {
+                position: relative;
+                padding: 7px 0;
+                border-bottom: 1px dashed #ccc
+            }
+
+            .header_1_0_2_box_2__menu__menuSub:nth-child(1) {
+                display: none
+            }
+
+            .header_1_0_2_box_2__menu__menuSub:last-child {
+                border: none
+            }
+
+            .header_1_0_2_box_2__menu__menuSub .menu-icon {
+                display: block;
+                font-size: 11px;
+                color: #f26649
+            }
+
+            .header_1_0_2_box_2__menu__menuSub .arr::before {
+                display: none
+            }
+
+            .header_1_0_2_box_2__menu__menuSub:hover .arr::before {
+                display: none
+            }
+
+            .header_1_0_2_box_2__menu__menuSub:hover .header_1_0_2_box_2__menu__menuSubBox {
+                display: none
+            }
+
+            .header_1_0_2_box_2__menu__menuSub:hover>a {
+                color: #062d63
+            }
+
+            .header_1_0_2_box_2__menu__menuSubBox {
+                position: inherit;
+                top: 0;
+                right: 0;
+                border-radius: 0;
+                width: 100%;
+                padding: 10px 15px;
+                background: #fff;
+                color: #000
+            }
+
+            .header_1_0_2_box_2__menu__menuSubBox ul.mnsub {
+                padding: 0
+            }
+
+            .header_1_0_2_box_2__menu__menuSubBox a {
+                color: #000
+            }
+
+            .header_1_0_2_box_2__menu__menuSubTitle {
+                margin-top: 10px
+            }
+
+            .header_1_0_2_box_2__menu .mntt {
+                margin-bottom: 3px;
+                margin-top: 3px;
+                font-size: 14px;
+                color: #f69679
+            }
+
+            .header_1_0_2_box_2__menu .mntt::before {
+                display: none
+            }
+
+            .header_1_0_2_box_2__menu__title {
+                text-transform: uppercase;
+                font-size: 14px
+            }
+
+            .header_1_0_2_box_2__regist {
+                margin-left: 40px;
+                padding: 10px 20px
+            }
+
+            .header_1_0_2_box_2__logosb {
+                display: block
+            }
+
+            .header_1_0_2.menufix {
+                background: #1D1E4F
+            }
+
+            .header_1_0_2.menufix .header_1_0_2_box_1 {
+                display: block
+            }
+
+            .header_1_0_2.menufix .header_1_0_2_box_2 {
+                background-color: #fff
+            }
+
+            .header_1_0_2.menufix .header_1_0_2_box_2__menu__title {
+                color: #000
+            }
+        }
+
+        @media (max-width: 812px) {
+            .header_1_0_2_box_1 .siteHeaderCall {
+                right: 10px
+            }
+        }
+
+        @media (max-width: 414px) {
+            .header_1_0_2_box_1__logo img {
+                top: 20px;
+                left: -30px;
+                height: 50px
+            }
+
+            .header_1_0_2_box_1__title {
+                color: #62D4FF;
+                position: absolute;
+                top: 90px;
+                display: flex;
+                left: 0;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                background-color: #131439;
+                padding: 5px 0
+            }
+
+            .header_1_0_2_box_1__title h2 {
+                font-size: 13px;
+                margin-top: 0;
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 1px solid #62D4FF
+            }
+
+            .header_1_0_2_box_1__title p {
+                margin-bottom: 0
+            }
+
+            .header_1_0_2_box_1 .siteHeaderNav {
+                right: 45px;
+                font-size: 25px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderNav span {
+                font-size: 10px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderCall {
+                right: 10px;
+                margin-top: 4px;
+                font-size: 22px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderCall span {
+                margin-top: -17px;
+                font-size: 10px
+            }
+
+            .header_1_0_2_box_1__regkham {
+                padding: 5px 10px;
+                right: 90px;
+                font-size: 13px
+            }
+        }
+
+        @media (max-width: 375px) {
+            .header_1_0_2_box_1__title h2 {
+                font-size: 11px
+            }
+
+            .header_1_0_2_box_1__title p {
+                font-size: 11px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderNav {
+                right: 40px
+            }
+
+            .header_1_0_2_box_1__regkham {
+                right: 80px;
+                font-size: 12px
+            }
+        }
+
+        @media (max-width: 360px) {
+            .header_1_0_2_box_1__regkham {
+                font-size: 11px
+            }
+        }
+
+        @media (max-width: 320px) {
+            .header_1_0_2_box_1__title h2 {
+                font-size: 10px
+            }
+
+            .header_1_0_2_box_1__title p {
+                font-size: 10px
+            }
+
+            .header_1_0_2_box_1__logo {
+                margin-left: 20px
+            }
+
+            .header_1_0_2_box_1__regkham {
+                font-size: 9px;
+                right: 70px
+            }
+
+            .header_1_0_2_box_1 .siteHeaderNav span {
+                font-size: 9px
+            }
+        }
+
+        /*# sourceMappingURL=../maps/header.css.map */
+    </style>
+
+    <header class="header_1_0_2">
+
+        <div class="header_1_0_2_box">
+
+            <div class="header_1_0_2_box_1">
+                <div class="container">
+                    <div class="header_1_0_2_box_1_left">
+                        <div class="header_1_0_2_box_1__logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_1_0_2_box_1_right">
+                        <div class="header_1_0_2_box_1__address">
+                            <ul>
+                                <li><i class="icon-calendar"></i>Thứ 2 - Chủ nhật  |  7h-17h</li>
+                                <li><i class="icon-location"></i>16 Nguyễn Như Đổ, Văn Miếu, Hà Nội</li>
+                            </ul>
+                        </div>
+                        <div class="header_1_0_2_box_1__call">
+                            <h2>Tổng đài tư vấn</h2>
+                            <p><a href="tell:1900633988">1900.633.988</a></p>
+                        </div>
+                        <div class="header_1_0_2_box_1__search">
+                            <p><a href="" class="header_1_0_2_box_1__regtv">Đăng ký tư vấn</a></p>
+                            <p>
+                                <input type="text" placeholder="Tìm kiếm thông tin..." class="header_1_0_2_box_1__ser"> 
+                                <button class="header_1_0_2_box_1__button"><i class="icon-search"></i></button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="header_1_0_2_box_1__regkham"> Đăng ký khám</a>
+                    <div class="iconMid siteHeaderNav">
+                        <i class="icon-menu"></i>
+                        <span>MENU</span>
+                    </div>
+                    <a href="#" class="iconMid siteHeaderCall btnnkhotline modal-btn" data-modal="search">
+                        <i class="icon-search"></i>
+                        <span>TÌM</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header_1_0_2_box_2">
+                <div class="container">
+                    <a href="index.html" class="header_1_0_2_box_2__logosb"><img src="images/logo.png" alt=""></a>
+
+                    <ul class="header_1_0_2_box_2__menu">
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="index.html" class="header_1_0_2_box_2__menu__title arr"><i class="icon-home-1"></i></a>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="cate.html" class="header_1_0_2_box_2__menu__title arr">Giới thiệu</a> 
+                            <i class="menu-icon icon-plus"></i>
+                            <div class="header_1_0_2_box_2__menu__menuSubBox">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Về Kangnam</div>
+                                        <ul>
+                                            <li><a href='/kien-thuc-lam-dep/benh-vien-tham-my-kangnam-benh-vien-han-quoc-uy-tin-tai-viet-nam/'>Giới
+                                                    thiệu</a></li>
+                                            <li><a href='/kien-thuc-lam-dep/doi-ngu-bac-si-tham-my-tai-bvtm-kangnam/'>Đội ngũ bác sĩ</a></li>
+                                            <li><a href='/quy-trinh-phau-thuat-tham-my-chuan-korean-beauty-triangle-tai-kangnam/'>Quy trình dịch vụ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class="mnsub">
+                                            <li><a title='Các công nghệ thẩm mỹ Hot nhất tại BVTM Kangnam' href='/kien-thuc-lam-dep/benh-vien-tham-my-kangnam-cong-nghe-tham-my-hot-han-quoc/'
+                                                    rel='nofollow'>Công nghệ</a></li>
+                                            <li><a title='Bảng giá phẫu thuật thẩm mỹ tại Kangnam' href='https://benhvienthammykangnam.vn/bang-gia-dich-vu-tham-my/cap-nhat-bang-gia-phau-thuat-tham-my-tai-kangnam-moi-nhat/'>Bảng
+                                                    giá dịch vụ thẩm mỹ</a></li>
+                                            <li><a title='Địa chỉ liên hệ của Bệnh viện thẩm mỹ Kangnam' href='/lien-he/' rel='nofollow'>Bệnh viện thẩm
+                                                    mỹ Kangnam ở đâu?</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Hoạt động thương hiệu</div>
+                                        <ul>
+                                            <li><a title='Kangnam thông báo chuyển địa chỉ tại Hà Nội' href='https://benhvienthammykangnam.vn/kien-thuc-lam-dep/benh-vien-tham-my-kangnam-thong-bao-thay-doi-dia-chi-moi-tai-ha-noi-190-truong-chinh/'
+                                                    rel='nofollow'>Kangnam thông báo chuyển địa chỉ tại Hà Nội</a></li>
+                                            <li><a href='/hoat-dong-thuong-hieu/toan-canh-dong-nghet-tai-su-kien-khai-truong-benh-vien-tham-my-chuan-han-dau-tien-tai-mien-bac/'
+                                                    rel='nofollow'>Toàn cảnh sự kiện khai trương Bệnh viện thẩm mỹ chuẩn Hàn đầu tiên tại miền Bắc</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Các chương trình khuyến mại phẫu thuật thẩm mỹ tại Kangnam' href='/kien-thuc-lam-dep/uu-dai/'
+                                                    rel='nofollow'>Khuyến mại</a></li>
+                                            <li><a title='Chính sách bảo hành sau phẫu thuật thẩm mỹ' href='/kien-thuc-lam-dep/chinh-sach-bao-hanh-uy-tin-tai-benh-vien-tham-my-kangnam/'
+                                                    rel='nofollow'>Chính sách bảo hành</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="post.html" class="header_1_0_2_box_2__menu__title arr">Vô sinh Nam</a>
+                            <i class="menu-icon icon-plus"></i>
+                            <div class="header_1_0_2_box_2__menu__menuSubBox">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Thẩm mỹ mũi</div>
+                                        <ul>
+                                            <li><a title='Nâng mũi S line 3D' href='/tham-my-mui/nang-mui-s-line-3d-dep-tu-a-z/'>Nâng mũi S line 3D</a></li>
+                                            <li><a title='Nâng mũi S line 3D' href='/tham-my-mui/nang-mui-ban-cau-truc-4d-chinh-sua-toi-da-chi-phi-toi-thieu/'>Nâng
+                                                    mũi bán cấu trúc 4D</a></li>
+                                            <li><a title='Nâng mũi S line 4D' href='/tham-my-mui/nang-mui-cau-truc-4d-tai-cau-truc-toan-dien-dang-mui/'>Nâng
+                                                    mũi cấu trúc 4D</a></li>
+                                            <li><a title='Nâng mũi S line 4D' href='/tham-my-mui/nang-mui-cau-truc-4d-nanoform-cong-nghe-nang-mui-doc-quyen-tai-kangnam/'>Nâng
+                                                    mũi cấu trúc 4D NanoForm</a></li>
+                                            <li><a title='Nâng mũi S line 4D' href='/tham-my-mui/nang-mui-cau-truc-4d-tu-than-chinh-hinh-mui-toan-dien-tu-a-z/'>Nâng
+                                                    mũi cấu trúc 4D Tự thân</a></li>
+
+                                            <li><a title='Nâng mũi Cấu trúc 4D Siêu âm' href='/tham-my-mui/nang-mui-cau-truc-4d-sieu-am-cong-nghe-nang-mui-chinh-xuong-the-he-moi-nhat/'>
+                                                    Nâng mũi Cấu trúc 4D Siêu âm</a></li>
+                                            <li><a title='Nâng mũi L line' href='/tham-my-mui/phau-thuat-nang-mui-cho-nam-gioi/'> Nâng mũi cho nam </a></li>
+                                            <li><a title='Nâng mũi bọc sụn' href='/tham-my-mui/phau-thuat-nang-mui-boc-sun/' rel='nofollow'>Nâng mũi bọc
+                                                    sụn</a></li>
+
+                                            <li><a title='Thu gọn cánh mũi' href='/tham-my-mui/thu-gon-canh-mui/' rel='nofollow'>Thu gọn cánh mũi</a></li>
+                                            <li><a title='Thu nhỏ đầu mũi' href='/tham-my-mui/thu-nho-thu-gon-dau-mui/' rel='nofollow'>Thu nhỏ đầu mũi</a></li>
+                                            <li><a title='Sửa mũi hỏng sau nâng' href='/tham-my-mui/sua-mui-dep/' rel='nofollow'>Sửa mũi hỏng sau nâng</a></li>
+                                            <li><a title='Sửa mũi gồ - lệch' href='/tham-my-mui/mui-go-lech-phai-lam-sao/' rel='nofollow'>Sửa mũi gồ -
+                                                    lệch</a></li>
+                                            <li><a title='Sửa mũi hếch' href='/tham-my-mui/mui-hech-la-gi-va-chi-dinh-cua-chuyen-gia/' rel='nofollow'>Sửa
+                                                    mũi hếch</a></li>
+                                            <li><a title='Nâng mũi không phẫu thuật' href='/tham-my-mui/nang-mui-khong-phau-thuat-giai-phap-an-toan-tao-dang-mui-cao-thon/'
+                                                    rel='nofollow'>Nâng mũi không phẫu thuật</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Thẩm mỹ mắt</div>
+                                        <ul>
+                                            <li><a title='Cắt mí mắt PLASMA' href='/tham-my-mat/cat-mi-mat-plasma/'>Cắt mí mắt PLASMA</a></li>
+                                            <li><a title='Cắt mí Hàn Quốc tại Kangnam' href='/tham-my-mat/cat-mi-mat-tren/' rel='nofollow'>Cắt mí Hàn
+                                                    Quốc</a></li>
+                                            <li><a title='Cắt mí mini' href='https://benhvienthammykangnam.vn/tham-my-mat/cat-mi-mini/' rel='nofollow'>Cắt
+                                                    mí mini</a></li>
+                                            <li><a title='Bấm mí mắt Multi - Point' href='/bam-mi-mat/bam-mi-mat-multi-point-mi-cong-nghe-cua-su-khac-biet-tao-mi-dep-hoan-hao/'>Bấm
+                                                    mí mắt Multi - Point</a></li>
+                                            <li><a title='Xóa rãnh lệ' href='https://benhvienthammykangnam.vn/tham-my-mat/xoa-ranh-le/'>Xóa rãnh lệ</a></li>
+                                            <li><a title='Bấm mí Dove Eyes' href='/tham-my-mat/bam-mi-han-quoc-dove-eyes-tao-doi-mat-bo-cau-dep-tu-nhien/'>Bấm
+                                                    mí Dove Eyes</a></li>
+                                            <li><a title='Bấm mí Hàn Quốc tại Kangnam' href='/tham-my-mat/bam-mi-han-quoc/' rel='nofollow'>Bấm mí Hàn
+                                                    Quốc</a></li>
+                                            <li><a title='Lấy mỡ mí mắt Hàn Quốc' href='/tham-my-mat/lay-mo-mi-mat-tren/' rel='nofollow'>Lấy mỡ mí mắt
+                                                    Hàn Quốc</a></li>
+                                            <li><a title='Cấy mỡ trẻ hóa mắt' href='/tham-my-mat/cay-mo-tre-hoa-mat/' rel='nofollow'>Cấy mỡ trẻ hóa mắt</a></li>
+
+                                            <li><a title='Nâng chân mày Hàn Quốc' href='/tham-my-mat/nang-chan-may-han-quoc-mat-tre-dep-thanh-tu-rang-ngoi/'
+                                                    rel='nofollow'>Nâng chân mày Hàn Quốc</a></li>
+                                            <li><a title='Chữa sụp mí mắt bẩm sinh' href='/tham-my-mat/sup-mi-bam-sinh/' rel='nofollow'>Chữa sụp mí mắt
+                                                    bẩm sinh</a></li>
+                                            <li><a title='Thẩm mỹ mắt to tại Kangnam' href='/tham-my-mat/tham-my-mat-to/' rel='nofollow'>Thẩm mỹ mắt to</a></li>
+                                            <li><a title='Cắt mí mắt sửa lại' href='/tham-my-mat/chinh-sua-cat-mi-mat-bi-hong-do-loi-phau-thuat/' rel='nofollow'>Cắt
+                                                    mí mắt sửa lại</a></li>
+                                            <li><a title='Tạo khóe mắt tại Bệnh viện thẩm mỹ Kangnam' href='/tham-my-mat/tao-khoe-mat-cong-nghe-han-quoc/'
+                                                    rel='nofollow'>Tạo khóe mắt</a></li>
+                                            <li><a title='Thẩm mỹ mắt toàn diện' href='/tham-my-mat/tham-my-mat-toan-dien/' rel='nofollow'>Thẩm mỹ mắt
+                                                    toàn diện</a></li>
+                                            <li><a title='Phẫu thuật chỉnh hình mắt khó' href='/tham-my-mat/phau-thuat-chinh-hinh-mat-kho/' rel='nofollow'>Phẫu
+                                                    thuật chỉnh hình mắt khó</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Thẩm mỹ khuôn mặt</div>
+                                        <ul>
+                                            <li><a title='Thẩm mỹ khuôn mặt 3D' href='/tham-my-ham-mat/tham-my-khuon-mat-3d/' rel='nofollow'>Thẩm mỹ
+                                                    khuôn mặt 3D</a></li>
+                                            <li><a title='gọt cằm V line 3D Hàn Quốc' href='/tham-my-ham-mat/got-mat-kangnams-perfect-vline-mat-thon-thanh-tu/'
+                                                    rel='nofollow'>Gọt mặt V Line 3D Hàn Quốc</a></li>
+                                            <li><a title='Độn cằm tự thân' href='/tham-my-ham-mat/phau-thuat-don-cam-tu-than-3d-cong-nghe-han-quoc/' rel='nofollow'>Độn
+                                                    cằm tự thân</a></li>
+                                            <li><a title='Độn cằm V line Hàn Quốc' href='/tham-my-ham-mat/phau-thuat-don-cam-v-line-han-quoc/' rel='nofollow'>Độn
+                                                    cằm V line</a></li>
+                                            <li><a title='Gọt cằm V line hiện đại' href='/tham-my-ham-mat/phau-thuat-got-cam-3d-cong-nghe-han-quoc/' rel='nofollow'>Gọt
+                                                    cằm V line</a></li>
+                                            <li><a title='Chỉnh hàm hô móm' href='/tham-my-ham-mat/chinh-ham-ho-mom-cong-nghe-3d/' rel='nofollow'>Chỉnh
+                                                    hàm hô móm</a></li>
+                                            <li><a title='Hạ gò má cao' href='/tham-my-ham-mat/ha-go-ma-3d-cong-nghe-han-quoc-mat-thon-gon-hai-hoa/' rel='nofollow'>Hạ
+                                                    gò má</a></li>
+                                            <li><a title='Nâng gò má' href='/tham-my-ham-mat/phau-thuat-nang-go-ma-cong-nghe-han-quoc/' rel='nofollow'>Nâng
+                                                    gò má</a></li>
+                                            <li><a title='Tạo cằm chẻ' href='/tham-my-ham-mat/tao-cam-che-cong-nghe-han-quoc-2016/' rel='nofollow'>Tạo
+                                                    cằm chẻ</a></li>
+                                            <li><a title='Chữa cười hở lợi' href='/tham-my-ham-mat/chua-cuoi-ho-loi-cong-nghe-han-quoc/' rel='nofollow'>Chữa
+                                                    cười hở lợi</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Thẩm mỹ vóc dáng</div>
+                                        <ul>
+                                            <li><a title='Thẩm mỹ vòng 1 Nano' href='/tham-my-vong-1/tham-my-vong-1-nano-dep-tron-ven-cam-xuc-cong-nghe-nang-nguc-moi-nhat-han-quoc/'
+                                                    rel='nofollow'>Thẩm mỹ vòng 1 Nano</a></li>
+                                            <li><a title='Thẩm mỹ vòng 1 NanoFat' href='/tham-my-vong-1/tham-my-vong-1-nano-fat-cong-nghe-tham-my-vong-1-doc-quyen-tai-kang-nam/'
+                                                    rel='nofollow'>Thẩm mỹ vòng 1 NanoFat</a></li>
+                                            <li><a title='Giảm mỡ bụng bằng Laser Lipo' href='/giam-mo-laserlipo/giam-mo-bung/' rel='nofollow'>Giảm mỡ
+                                                    bụng LIPO MATIC 3D</a></li>
+                                            <li><a title='Giảm mỡ đùi bằng Laser Lipo' href='/giam-mo-laserlipo/giam-mo-dui-an-toan/' rel='nofollow'>Giảm
+                                                    mỡ đùi LIPO MATIC 3D</a></li>
+                                            <li><a title='Giảm mỡ mặt' href='/giam-mo-laserlipo/giam-mo-mat-khong-phau-thuat/' rel='nofollow'>Giảm mỡ
+                                                    mặt</a></li>
+                                            <li><a title='Giảm mỡ bắp tay, bắp chân hiệu quả' href='/giam-mo-laserlipo/phuong-phap-giam-mo-bap-chan-bap-tay/'
+                                                    rel='nofollow'>Giảm mỡ bắp tay bắp chân</a></li>
+                                            <li><a title='Tạo hình thành bụng toàn thể' href='https://benhvienthammykangnam.vn/giam-mo-laserlipo/tao-hinh-thanh-bung-toan-the'>Tạo
+                                                    hình thành bụng toàn thể</a></li>
+                                            <li><a title='Tạo hình thành bụng 6 múi' href='https://benhvienthammykangnam.vn/giam-mo-laserlipo/tao-hinh-thanh-bung-6-mui/'>Tạo
+                                                    hình thành bụng 6 múi</a></li>
+                                            <li><a title='Căng da bụng' href='https://benhvienthammykangnam.vn/giam-mo-laserlipo/cang-da-bung/'>Căng da
+                                                    bụng</a></li>
+                                            <li><a title='Thẩm mỹ vòng 3 an toàn bằng mỡ tự thân' href='/kien-thuc-lam-dep/tham-my-vong-3-bang-mo-tu-than-khong-phau-thuat/'
+                                                    rel='nofollow'>Thẩm mỹ vòng 3 bằng mỡ tự thân</a></li>
+                                            <li><a title='Thẩm mỹ vòng 3 nội soi' href='/kien-thuc-lam-dep/tham-my-vong-3-noi-soi-duoc-thuc-hien-tai-benh-vien/'
+                                                    rel='nofollow'>Thẩm mỹ vòng 3 nội soi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="cate_2.html" class="header_1_0_2_box_2__menu__title arr">Bao Quy Đầu</a>
+                            <i class="menu-icon icon-plus"></i>
+                            <div class="header_1_0_2_box_2__menu__menuSubBox">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Thẩm mỹ da CN cao</div>
+                                        <ul>
+                                            <li><a title='Điều trị sẹo hiệu quả bằng CN hiện đại' href='/seo/lam-day-seo-lom-cay-da-sieu-vi-diem/' rel='nofollow'>Khắc
+                                                    phục sẹo</a></li>
+                                            <li><a title='Loại bỏ mụn hoàn toàn bằng Nano Skin' href='/mun/tam-biet-mun-trung-ca-bang-cong-nghe-nano-skin/'
+                                                    rel='nofollow'>Khắc phục mụn</a></li>
+                                            <li><a title='Trị nám da' href='/nam/tri-nam-cong-nghe-cao-laser-picosure-sach-nam-sang-min-da/'>Trị nám da</a></li>
+                                            <li><a title='Khắc phục hoàn toàn tàn nhang tại Kangnam' href='/tan-nhang/laser-toning-cong-nghe-xoa-tan-nhang-uu-viet/'
+                                                    rel='nofollow'>Khắc phục tàn nhang</a></li>
+                                            <li><a title='Triệt lông vĩnh viễn với công nghệ cao' href='/triet-long/triet-long-an-toan-bang-cong-nghe-new-e-light/'
+                                                    rel='nofollow'>Triệt lông</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Xóa hình xăm bằng laser không để lại sẹo' href='/xoa-xam/xoa-xam-cong-nghe-laser-picosure/'
+                                                    rel='nofollow'>Xóa hình xăm</a></li>
+                                            <li><a title='Điều trị mụn thịt hiệu quả' href='/mun-thit/loai-bo-mun-thit-bang-cong-nghe-laser-co2-fractional-2016/'
+                                                    rel='nofollow'>Khắc phục mụn thịt</a></li>
+                                            <li><a title='Khắc phục vết thâm trên da bằng CN hiện đại' href='/dich-vu-khac/lam-mo-vet-tham-toan-bang-cong-nghe-new-e-light/'
+                                                    rel='nofollow'>Khắc phục vết thâm</a></li>
+                                            <li><a title='Trẻ hóa da Thermage' href='/kien-thuc-lam-dep/tre-hoa-da-thermage-flx/' rel='nofollow'>Trẻ hóa
+                                                    da Thermage</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Trị rụng tóc CN sinh học tại BVTM Kangnam' href='/kien-thuc-lam-dep/tri-rung-toc-bang-cong-nghe-sinh-hoc/'
+                                                    rel='nofollow'>Khắc phục rụng tóc CN sinh học</a></li>
+                                            <li><a title='Điều trị viêm nang lông bằng CN New Elight' href='/triet-long/khac-phuc-tinh-trang-viem-nang-long-bang-cong-nghe-new-e-light/'
+                                                    rel='nofollow'>Viêm nang lông</a></li>
+                                            <li><a title='Tẩy nốt ruồi bằng laser' href='/dich-vu-khac/tay-not-ruoi-bang-laser-co2-fractional/'>Tẩy nốt
+                                                    ruồi</a></li>
+                                            <li><a title='Xóa chàm bớt bẩm sinh nhanh chóng' href='/dich-vu-khac/xoa-cham-bot-bam-sinh-hieu-qua-sau-1-lieu-trinh/'>Xóa
+                                                    chàm bớt bẩm sinh</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Spa thẩm mỹ</div>
+                                        <ul>
+                                            <li><a title='Dịch vụ tắm trắng toàn thân bằng sữa non' href='/tam-trang/tam-trang-da-toan-than-voi-sua-non-nguyen-chat/'
+                                                    rel='nofollow'>Tắm trắng toàn thân</a></li>
+                                            <li><a title='Kỹ thuật phun xăm thẩm mỹ CN Hàn Quốc ' href='/phun-xam/phun-xam-moi-tham-cn-han-quoc-moi-dep-nhu-sao/'
+                                                    rel='nofollow'>Phun xăm Hàn Quốc</a></li>
+                                            <li><a title='Chăm sóc da mặt cho từng loại da' href='/dich-vu-khac/cham-soc-da-mat-thu-gian-cho-tung-loai-da/'>Chăm
+                                                    sóc da mặt cho từng loại da</a></li>
+                                            <li><a title='Chăm sóc da an toàn cho da nhạy cảm' href='/dich-vu-khac/tinh-chat-cham-soc-da-nhay-cam/'>Chăm
+                                                    sóc da nhạy cảm</a></li>
+                                            <li><a title='Massage cao cấp tại Bệnh viện thẩm mỹ Kangnam' href='/dich-vu-khac/massage-toan-than/'>Massage
+                                                    cao cấp</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="#page4" class="header_1_0_2_box_2__menu__title arr ">Tinh Hoàn</a>
+                            <i class="menu-icon icon-plus"></i>
+                            <div class="header_1_0_2_box_2__menu__menuSubBox">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Phẫu thuật thẩm mỹ khác</div>
+                                        <ul>
+                                            <li><a title='Điều trị hôi nách hiệu quả với CN nội soi' href='/hoi-nach/hut-bo-noi-soi-tuyen-mo-hoi-khac-phuc-mui-hoi-nach/'
+                                                    rel='nofollow'>Khắc phục hôi nách CN nội soi</a></li>
+                                            <li><a title='Tạo má lúm Cutie' href='/tao-ma-lum-dong-tien/tao-ma-lum-dong-tien-an-toan-tai-kangnam/' rel='nofollow'>Tạo
+                                                    má lúm Cutie</a></li>
+                                            <li><a title='Phẫu thuật tạo môi trái tim đẹp hoàn hảo tại Kangnam' href='/tao-moi-trai-tim/lam-day-lam-mong-moi/'>Tạo
+                                                    môi trái tim</a></li>
+                                            <li><a title='Tạo môi cười tươi xinh công nghệ Hàn Quốc' href='/kien-thuc-lam-dep/phau-thuat-tao-moi-cuoi-cho-net-cuoi-them-tuoi-xinh/'>Tạo
+                                                    môi cười Hàn Quốc</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Căng da mặt 3D hiện đại nhất' href='/cang-da-cay-mo-mat/cang-da-mini-xoa-nep-nhan-cang-da-chay-xe-han-che-xam-lan/'
+                                                    rel='nofollow'>Căng da mặt 3D</a></li>
+                                            <li><a title='Căng da mặt nội soi an toàn tại Kangnam' href='/cang-da-cay-mo-mat/cang-da-mat-noi-soi/' rel='nofollow'>Căng
+                                                    da mặt nội soi</a></li>
+                                            <li><a title='Kỹ thuật căng da mặt bằng chỉ tại Bệnh viện thẩm mỹ Kangnam' href='/cang-da-cay-mo-mat/cang-da-mat-bang-chi-sinh-hoc-2-in-1-cong-nghe-han-quoc/'
+                                                    rel='nofollow'>Căng da mặt bằng chỉ</a></li>
+
+                                            <li><a title='Trẻ hóa da công nghệ Nano Fat' href='/cang-da-cay-mo-mat/tre-hoa-da-nano-fat-giai-phap-khac-phuc-triet-de-cac-dau-hieu-lao-hoa/'
+                                                    rel='nofollow'>Cấy mỡ công nghệ Nano Fat</a></li>
+                                            <li><a title='Trẻ hóa da công nghệ Nano Fat' href='/dich-vu-khac/tre-hoa-da-bang-cong-nghe-thermage-lan-da-tre-trung-cang-min/'
+                                                    rel='nofollow'>Trẻ hóa da công nghệ thermage</a></li>
+                                            <li><a title='Làm đầy rãnh nhăn hiệu quả tại Kangnam' href='/kien-thuc-lam-dep/lam-day-ranh-nhan/' rel='nofollow'>Làm
+                                                    đầy rãnh nhăn</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Nha khoa thẩm mỹ</div>
+                                        <ul>
+                                            <li><a title='Niềng răng mắc cài UGSL' href='/nha-khoa-tham-my/nieng-rang-mac-cai/' rel='nofollow'>Niềng
+                                                    răng mắc cài UGSL</a></li>
+                                            <li><a title='Niềng răng khay trong' href='/nha-khoa-tham-my/nieng-rang-khay-trong-kangnam/' rel='nofollow'>Niềng
+                                                    răng khay trong</a></li>
+                                            <li><a title='Cấy ghép Implant' href='/nha-khoa-tham-my/cay-ghep-rang-implant-nha-khoa-kangnam/' rel='nofollow'>Cấy
+                                                    ghép Implant</a></li>
+                                            <li><a title='Trám răng' href='/nha-khoa-tham-my/tram-rang-tham-my-nha-khoa-kangnam/' rel='nofollow'>Trám
+                                                    răng</a></li>
+                                            <li><a title='Tẩy trắng răng' href='/nha-khoa-tham-my/tay-trang-rang-danh-bay-o-vang-trang-sang-an-toan/'
+                                                    rel='nofollow'>Tẩy trắng răng</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Bọc răng sứ thẩm mỹ' href='/nha-khoa-tham-my/boc-rang-su-tham-my-kangnam/' rel='nofollow'>Bọc
+                                                    răng sứ thẩm mỹ</a></li>
+                                            <li><a title='Cầu răng sứ thẩm mỹ' href='/nha-khoa-tham-my/lam-cau-rang-toan-su-tham-my-giup-phuc-hoi-rang-toan-dien/'
+                                                    rel='nofollow'>Cầu răng sứ thẩm mỹ</a></li>
+                                            <li><a title='Răng toàn sứ thẩm mỹ' href='/nha-khoa-tham-my/rang-toan-su-tham-my-rang-dep-tu-nhien-cho-nu-cuoi-duyen-dang/'
+                                                    rel='nofollow'>Răng toàn sứ thẩm mỹ</a></li>
+                                            <li><a title='Mặt dán sứ Veneer' href='/nha-khoa-tham-my/mat-dan-su-veneer-phuc-hoi-rang-xau-ben-dep-tu-nhien/'
+                                                    rel='nofollow'>Mặt dán sứ Veneer</a></li>
+                                            <li><a title='Chữa cười hở lợi' href='/nha-khoa-tham-my/phau-thuat-chua-cuoi-ho-loi-3d-lay-lai-tu-tin-voi-nu-cuoi-ma-luc/'
+                                                    rel='nofollow'>Chữa cười hở lợi</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="#page5" class="header_1_0_2_box_2__menu__title arr ">Yếu Sinh Lý</a>
+                            <i class="menu-icon icon-plus"></i>
+                            <div class="header_1_0_2_box_2__menu__menuSubBox">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Hành trình lột xác</div>
+                                        <ul>
+                                            <li><a href='/hanh-trinh-lot-xac-kangnam/' rel='nofollow'>Hành trình lột xác tại Kangnam</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Câu chuyện</div>
+                                        <ul>
+                                            <li><a href='/cau-chuyen-thuc-te/' rel='nofollow'>Câu chuyện thực tế</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Hình ảnh</div>
+                                        <ul>
+                                            <li><a title='' href='/hinh-anh-khach-thuc-te/' rel='nofollow'>Hình ảnh thực tế</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Video</div>
+                                        <ul>
+                                            <li><a title='' href='/video-khach-thuc-te/' rel='nofollow'>Video khách hàng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="#page6" class="header_1_0_2_box_2__menu__title arr">Bệnh xã hội</a>
+                            <i class="menu-icon icon-plus"></i>
+                            <div class="header_1_0_2_box_2__menu__menuSubBox">
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Video</div>
+                                        <ul>
+                                            <li><a title='Video cắt mí mắt tại Bệnh viện thẩm mỹ Kangnam' href='/video-kn/cat-mi-plasma-mat-dep-chuan-tung-li-hai-hoa-ty-le/'
+                                                    rel='nofollow'>Video cắt mí mắt Plasma </a></li>
+                                            <li><a title='Video thực hiện Bấm mí tại Kangnam' href='/bam-mi-mat/video-mo-phong-dich-vu-bam-mi-multi-point/'
+                                                    rel='nofollow'>Video bấm mí Multi-Point</a></li>
+                                            <li><a title='Video nâng mũi Sline 4D tại BVTM Kangnam' href='/video-kn/cong-nghe-nang-mui-s-line-4d/' rel='nofollow'>Video
+                                                    nâng mũi Cấu trúc 4D</a></li>
+                                            <li><a title='Video nâng mũi Sline 3D tại Kangnam' href='/video-kn/video-nang-mui-s-line-3d/' rel='nofollow'>Video
+                                                    nâng mũi Sline 3D</a></li>
+                                            <li><a title='Video thẩm mỹ vòng 1 tại Bệnh viện thẩm mỹ Kangnam' href='/tham-my-vong-1/video-tham-my-vong-1-tai-benh-vien-tham-my-kangnam/'
+                                                    rel='nofollow'>Video thẩm mỹ vòng 1 Nano</a></li>
+                                            <li><a title='Video gọt mặt tại Kangnam' href='/video-kn/video-got-mat-v-line-3d-tao-khuon-mat-v-line-chuan-han/'
+                                                    rel='nofollow'>Video gọt mặt Vline 3D</a></li>
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Video chia sẻ khách hàng cắt mí tại Kangnam' href='/video-kn/video-khach-hang-cat-mi-eyelid/'
+                                                    rel='nofollow'>Video chia sẻ khách hàng cắt mí </a></li>
+                                            <li><a title='Video chia sẻ khách hàng bấm mí tại BVTM Kangnam' href='/bam-mi-mat/video-khach-hang-bam-mi-multi-point/'
+                                                    rel='nofollow'>Video khách hàng bấm mí Multi - Point</a></li>
+                                            <li><a title='Video chia sẻ khách hàng nâng chân mày tại Kangnam' href='/video-kn/video-nang-chan-may-thuc-te/'
+                                                    rel='nofollow'>Video chia sẻ khách hàng nâng chân mày </a></li>
+                                            <li><a title='Video chia sẻ khách hàng nâng mũi tại Kangnam' href='/video-kn/nang-mui-kho-co-kangnam/' rel='nofollow'>Video
+                                                    chia sẻ khách hàng nâng mũi </a></li>
+                                            <li><a title='Video chia sẻ khách hàng gọt mặt' href='/video-kn/video-khach-hang-got-mat/' rel='nofollow'>Video
+                                                    chia sẻ khách hàng gọt mặt </a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class='mntt'>Hình Ảnh</div>
+                                        <ul>
+                                            <li><a title='Kết quả nâng mũi tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-nang-mui-s-line/'
+                                                    rel='nofollow'>Kết quả nâng mũi</a></li>
+                                            <li><a title='Kết quả sửa mũi tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-sua-mui/' rel='nofollow'>Kết
+                                                    quả sửa mũi</a></li>
+                                            <li><a title='Kết quả cắt mí tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-cat-mi-mat/' rel='nofollow'>Kết
+                                                    quả cắt mí</a></li>
+                                            <li><a title='Kết quả bấm mí tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-bam-mi-han-quoc/' rel='nofollow'>Kết
+                                                    quả bấm mí</a></li>
+                                            <li><a title='Kết quả nâng chân mày tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/ket-qua-nang-chan-may-han-quoc/'
+                                                    rel='nofollow'>Kết quả nâng chân mày</a></li>
+                                            <li><a title='Kết quả độn cằm tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-don-cam/' rel='nofollow'>Kết
+                                                    quả độn cằm</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <ul class='mnsub'>
+                                            <li><a title='Kết quả tạo má lúm tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-tao-ma-lum-dong-tien/'
+                                                    rel='nofollow'>Kết quả tạo má lúm đồng tiền</a></li>
+                                            <li><a title='Kết quả hạ gò má tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-ha-go-ma/' rel='nofollow'>Kết
+                                                    quả hạ gò má</a></li>
+                                            <li><a title='Kết quả chỉnh hàm hô móm tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-chinh-ham-ho-mom/'
+                                                    rel='nofollow'>Kết quả chỉnh hàm hô móm</a></li>
+                                            <li><a title='Kết quả thẩm mỹ vòng 1 tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-truoc-sau-khach-hang-tham-my-voc-dang/'
+                                                    rel='nofollow'>Kết quả thẩm mỹ vòng 1</a></li>
+                                            <li><a title='Kết quả giảm béo tại Bệnh viện thẩm mỹ Kangnam' href='/giam-mo-laserlipo/hinh-anh-giam-beo-khong-phau-thuat/'
+                                                    rel='nofollow'>Kết quả giảm béo Lipo Matic 3D</a></li>
+                                            <li><a title='Kết quả căng da mặt tại Bệnh viện thẩm mỹ Kangnam' href='/album-anh/hinh-anh-cang-da-tre-hoa-da-mat/'
+                                                    rel='nofollow'>Kết quả căng da mặt</a></li>
+                                            <li><a title="trị mụn tại Bệnh viện thẩm mỹ Kangnam" href="https://benhvienthammykangnam.vn/hinh-anh-khach-hang-dich-vu/" rel="nofollow"><b class="mnsub__more">Xem dịch vụ khác<i class="icon-angle-double-right"></i></b></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="#page6" class="header_1_0_2_box_2__menu__title arr">Tin tức</a>
+                        </li>
+                        <li class="header_1_0_2_box_2__menu__menuSub">
+                            <a href="#page6" class="header_1_0_2_box_2__menu__title arr">Video</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header_1_0_2_box_3"></div>
+
+            <div class="modal popupSearch_1_0_0" id="search" style="display:none;">
+                <div class="modal-bg"></div>
+                <div class="modal-box animate-zoom">
+                    <div class="modal-header">
+                        <div class="modal-close">×</div>
+                        <div class="popupSearch_1_0_0__title">Tìm Kiếm Nhanh</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="popupSearch_1_0_0__search">
+                            <input id="s" name="s" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                            <button type="submit"><i class="icon-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <script>
+
+        function layoutHandler() {
+            if (window.innerWidth < 1025) {
+            $(".mn1,.mn2,.mn3,.mn4,.mn5,.mn6,.mn7,.mn8,.mn9").click(function () {
+                $(this).parent().find('.header_1_0_1_box_2__menu__menuSubBox,.header_1_0_2_box_2__menu__menuSubBox').toggle();
+            });
+            }
+            if (window.innerWidth < 1025){
+            $(".LP .siteHeaderMain a").click(function(){
+                $(".LP .siteHeaderMain").removeClass("active");
+                $(".siteHeader-bg").removeClass("active");
+            });
+                
+            }
+        }
+        layoutHandler();
+
+        $(".header_1_0_1_box_2__menu__menuSub .menu-icon,.header_1_0_2_box_2__menu__menuSub .menu-icon").click(function(){
+            $(this).parent().find('.header_1_0_1_box_2__menu__menuSubBox,.header_1_0_2_box_2__menu__menuSubBox').toggle();
+            if ($(this).hasClass("icon-plus") == 1) {
+                $(this).addClass("icon-minus");
+                $(this).removeClass("icon-plus");
+            } else {
+                $(this).removeClass("icon-minus");
+                $(this).addClass("icon-plus");
+            }
+        });
+
+        $(".siteHeaderNav").click(function () {
+            $(".header_1_0_1_box_2,.header_1_0_2_box_2").addClass("active");
+            $(".header_1_0_1_box_3,.header_1_0_2_box_3").addClass("active");
+        });
+        $(".header_1_0_1_box_3,.header_1_0_2_box_3").click(function () {
+            $(".header_1_0_1_box_2,.header_1_0_2_box_2").removeClass("active");
+            $(".header_1_0_1_box_3,.header_1_0_2_box_3").removeClass("active");
+        });
+    
+
+    </script>
+
+
+</body>
+
+
+</html>

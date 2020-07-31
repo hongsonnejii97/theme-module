@@ -1,0 +1,110 @@
+.service_3_1_2__title p,
+.service_3_1_2__title span {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+}
+
+.service_3_1_2 {
+    padding: 30px 0
+}
+
+.service_3_1_2__title {
+    text-align: center
+}
+
+.service_3_1_2__title p {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #015440
+}
+
+.service_3_1_2__title span {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 20px;
+    color: #015440;
+    font-weight: 400;
+    display: block
+}
+
+.service_3_1_2__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px
+}
+
+.service_3_1_2__box .item {
+    width: 23%;
+    text-align: center
+}
+
+.service_3_1_2__box .item .pic {
+    margin: 0 20px 10px
+}
+
+.service_3_1_2__box .item .pic img {
+    width: 100%;
+    transition: all 0.4s
+}
+
+.service_3_1_2__box .item .text {
+    color: #3a3a3a
+}
+
+.service_3_1_2__box .item:hover .pic img {
+    transform: scale(1.1);
+    transition: all 0.4s
+}
+
+@media (max-width: 812px) {
+    .service_3_1_2__title p {
+        font-size: 20px
+    }
+
+    .service_3_1_2__title span {
+        margin: 10px auto 30px
+    }
+
+    .service_3_1_2__box {
+        margin-top: 30px
+    }
+
+    .service_3_1_2__box .item .text {
+        font-size: 12px
+    }
+}
+
+@media (max-width: 414px) {
+    .service_3_1_2 {
+        padding: 20px 0
+    }
+
+    .service_3_1_2__title p {
+        font-size: 16px
+    }
+
+    .service_3_1_2__title span {
+        font-size: 14px;
+        margin-bottom: 20px
+    }
+
+    .service_3_1_2__box {
+        margin-top: 0
+    }
+
+    .service_3_1_2__box .item {
+        width: 48%;
+        margin-bottom: 15px
+    }
+
+    .service_3_1_2__box .item .pic {
+        margin: 0 auto
+    }
+
+    .service_3_1_2__box .item .text {
+        font-size: 12px
+    }
+}
+
+/*# sourceMappingURL=../../maps/pc/service_3_1_2.css.map */

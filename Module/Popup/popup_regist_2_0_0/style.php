@@ -1,0 +1,234 @@
+<?php 
+  echo '
+    <style>
+      .popup_regist_2_0_0 .popup_regist_2_0_0_overlay {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAMFBMVEX///8HBwcICAgUFBQXFxcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuanbkAAAAQUlEQVR4nOzOoQ0AIBDF0K5QNiC3wYUN2H8nJPkai6l5prSOdcPU2jckN8mTZEmWZEmW5EFy8f+e/g4AAAD//wMAKnM4yCLdBHkAAAAASUVORK5CYII=);
+      }
+
+      .popup_regist_2_0_0_box #popup_regist_2_0_0_closePopup {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMBJREFUeNqc0z0KAjEQhuFx8E5qrqFeQdBCu0WwF2zsxd7fG+QCC+reyW8kgRjza+DdIksedgLb01rfiWiPWqpfA9QwHjt0QaM/gJucF+SFxpWQBabowWbTQucC6AuQDXZeCjTJQD+Aj+SgIBBCfEjlgBjiQie0SAGy+okLFGiLDmgeA1JfYkfYoBlaO6MVI0Mzgox0dEZTpYgAV3PwGbgjlUNCAOUgLgSSEFcAUYgrAfL+tQ8kyKoSsKsz0PItwAC6cz7Ubz7EKgAAAABJRU5ErkJggg==);
+      }
+
+      .popup_regist_2_0_0 {
+        font-size: 14px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      }
+      .popup_regist_2_0_0 input, .popup_regist_2_0_0 textarea {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      .popup_regist_2_0_0__header {
+        display: flex;
+      }
+      .popup_regist_2_0_0__header img {
+        width: 100%;
+      }
+      .popup_regist_2_0_0__header h2 {
+        margin: 0;
+        color: #283F75;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-left: 30px;
+      }
+      .popup_regist_2_0_0__content {
+        margin-top: 20px;
+      }
+      .popup_regist_2_0_0__content input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        background: #ECF0F1;
+        border-radius: 3px;
+        outline: none;
+      }
+      .popup_regist_2_0_0__ft {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .popup_regist_2_0_0__ft .ft-1 {
+        display: flex;
+      }
+      .popup_regist_2_0_0__ft .ft-1 .text {
+        padding-left: 10px;
+      }
+      .popup_regist_2_0_0__ft .ft-1 .text p {
+        margin: 0;
+        font-size: 15px;
+      }
+      .popup_regist_2_0_0__ft .ft-1 .text b {
+        color: #283F75;
+        font-size: 18px;
+      }
+      .popup_regist_2_0_0__ft .regist button {
+        background: #EF4324;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .popup_regist_2_0_0__note {
+        margin: 15px 100px 0;
+        text-align: center;
+        color: #000;
+        font-style: italic;
+      }
+      .popup_regist_2_0_0 .overlay_form {
+        font-size: 14px;
+      }
+      .popup_regist_2_0_0 .popup_regist_2_0_0_overlay {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0.7;
+      }
+      .popup_regist_2_0_0_box {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+      }
+      .popup_regist_2_0_0_box article {
+        background: #fff;
+        z-index: 11;
+        margin: 50px auto;
+        padding: 20px;
+        width: 550px;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+        border-top: 5px solid #00abe5;
+      }
+      @media (max-width: 320px) {
+        .popup_regist_2_0_0_box article {
+          width: 300px;
+        }
+      }
+      .popup_regist_2_0_0_box #popup_regist_2_0_0_closePopup {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        top: -18px;
+        right: -24px;
+        transition: all 0.5s ease 0s;
+        font-family: arial;
+      }
+      @media (max-width: 375px) {
+        .popup_regist_2_0_0_box #popup_regist_2_0_0_closePopup {
+          top: 10px;
+          right: 10px;
+        }
+      }
+      .popup_regist_2_0_0_box #popup_regist_2_0_0_closePopup:hover {
+        transform: rotate(360deg);
+      }
+      .popup_regist_2_0_0 .popup_regist_2_0_0_clickPopup2 {
+        color: #fff;
+        width: 100px;
+        height: 20px;
+        padding: 10px;
+        background-color: #6e2daa;
+      }
+      .popup_regist_2_0_0 .popup_regist_2_0_0_clickPopup2:hover {
+        background-color: #00abe2;
+        cursor: pointer;
+      }
+
+      @media (max-width: 414px) {
+        .popup_regist_2_0_0_box article {
+          width: 350px;
+          margin-top: 20px;
+        }
+        .popup_regist_2_0_0__header {
+          display: block;
+        }
+        .popup_regist_2_0_0__header .pic {
+          width: 50%;
+          margin: 0 auto;
+        }
+        .popup_regist_2_0_0__header h2 {
+          padding-left: 0;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .popup_regist_2_0_0__ft .ft-1 .text p {
+          font-size: 14px;
+        }
+        .popup_regist_2_0_0__ft .ft-1 .text b {
+          font-size: 16px;
+        }
+        .popup_regist_2_0_0__ft .regist button {
+          font-size: 14px;
+        }
+        .popup_regist_2_0_0__note {
+          margin: 15px 0 0;
+        }
+      }
+      @media (max-width: 375px) {
+        .pop_box article {
+          width: 345px;
+        }
+
+        .pop_box #close {
+          top: 12px;
+          right: 12px;
+        }
+
+        .pop_box #close {
+          background: url(../images/pucb-close2.png) center center no-repeat;
+        }
+      }
+      @media (max-width: 360px) {
+        .popup_regist_2_0_0_box article {
+          width: 340px;
+        }
+      }
+      @media (max-width: 320px) {
+        .popup_regist_2_0_0_box article {
+          width: 300px;
+        }
+        .popup_regist_2_0_0__content {
+          margin-top: 10px;
+        }
+        .popup_regist_2_0_0__ft .regist button {
+          padding: 5px 15px;
+        }
+        .popup_regist_2_0_0__note {
+          font-size: 12px;
+        }
+
+        .pop_fr > div:nth-child(2) .sol p {
+          margin: 3px 0;
+        }
+
+        .pop_fr {
+          padding: 8px 10px 10px;
+        }
+
+        .pop_tt p {
+          padding: 2px 30px 14px;
+          background: none;
+        }
+
+        .pop_fr > div:nth-child(2) .note {
+          display: none;
+        }
+
+        .pop_fr > div:nth-child(1) textarea {
+          height: 70px;
+        }
+      }
+
+    </style>  
+  ';
+?>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SCI FRAMEWORK</title>
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+	
+</head>
+
+<body>
+
+    <style>
+        .sidebar_2_2_0__newslq ul li a::before,
+		.sidebar_2_2_0__newsnb .sb-tabs .sb-tab::after,
+		.sidebar_2_2_0__newsnb .sb-box ul li a::before {
+			font-family: "fontello";
+			font-style: normal;
+			font-weight: 400;
+			speak: none;
+			display: inline-block;
+			text-decoration: inherit;
+			width: 1em;
+			margin-right: .2em;
+			text-align: center;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1em;
+			margin-left: .2em;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale
+		}
+
+		.sidebar_2_2_0 {
+			margin-top: 50px
+		}
+
+		.sidebar_2_2_0__margin {
+			height: 30px
+		}
+
+		.sidebar_2_2_0__title {
+			padding: 10px;
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			border-bottom: 3px #e3e3e3 solid;
+			border-left: 1px #e3e3e3 solid;
+			border-right: 1px #e3e3e3 solid;
+			border-top: 1px #004283 solid;
+			background: #015440;
+			margin-bottom: 2px;
+			color: #fff;
+			line-height: 22px;
+			font-weight: 500;
+			border-radius: 5px;
+			position: relative
+		}
+
+		.sidebar_2_2_0__newslq ul {
+			padding-left: 0;
+			margin: 0;
+			list-style: none;
+			background: #F8F8F8
+		}
+
+		.sidebar_2_2_0__newslq ul li {
+			border-bottom: 1px solid #e3e3e3
+		}
+
+		.sidebar_2_2_0__newslq ul li a {
+			font-weight: 400;
+			color: #015440;
+			padding: 10px;
+			display: block;
+			font-size: 14px;
+			position: relative;
+			padding-left: 20px;
+			transition: all 0.4s
+		}
+
+		.sidebar_2_2_0__newslq ul li a::before {
+			content: "\e887";
+			position: absolute;
+			left: 0;
+			top: 12px;
+			color: #B5B5B5
+		}
+
+		.sidebar_2_2_0__newslq ul li a:hover {
+			background: #029687;
+			color: #fff;
+			transition: all 0.4s
+		}
+
+		.sidebar_2_2_0__newsnb .sb-tabs {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between
+		}
+
+		.sidebar_2_2_0__newsnb .sb-tabs .sb-tab {
+			width: 49%;
+			text-align: center;
+			background: #DDDDDD;
+			color: #015440;
+			padding: 10px;
+			position: relative
+		}
+
+		.sidebar_2_2_0__newsnb .sb-tabs .sb-tab.active {
+			background: #015440;
+			color: #fff
+		}
+
+		.sidebar_2_2_0__newsnb .sb-tabs .sb-tab.active::after {
+			display: block
+		}
+
+		.sidebar_2_2_0__newsnb .sb-tabs .sb-tab::after {
+			content: "\e884";
+			color: #015440;
+			font-size: 25px;
+			position: absolute;
+			bottom: -15px;
+			left: calc(50% - 20px);
+			display: none
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box {
+			display: none
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box.active {
+			display: block
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box ul {
+			padding-left: 0;
+			margin: 0;
+			list-style: none;
+			margin-top: 20px
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box ul li {
+			border-bottom: 1px solid #e3e3e3
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box ul li a {
+			font-weight: 400;
+			color: #015440;
+			padding: 10px;
+			display: block;
+			font-size: 14px;
+			position: relative;
+			padding-left: 20px;
+			transition: all 0.4s
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box ul li a::before {
+			content: "\e887";
+			position: absolute;
+			left: 0;
+			top: 12px;
+			color: #B5B5B5
+		}
+
+		.sidebar_2_2_0__newsnb .sb-box ul li a:hover {
+			background: #029687;
+			color: #fff;
+			transition: all 0.4s
+		}
+
+		@media (max-width: 1024px) {
+			.sidebar_2_2_0__title {
+				font-size: 12px
+			}
+
+			.sidebar_2_2_0__newslq ul li a {
+				font-size: 12px
+			}
+
+			.sidebar_2_2_0__newsnb .sb-tabs .sb-tab {
+				font-size: 12px
+			}
+
+			.sidebar_2_2_0__newsnb .sb-box ul li a {
+				font-size: 12px
+			}
+
+			.sidebar_2_2_0__newsVideo img {
+				width: 100%
+			}
+		}
+
+		@media (max-width: 414px) {
+			.sidebar_2_2_0 {
+				display: none
+			}
+		}
+    </style>
+
+<div class="row">
+	<div class="container">
+	<div class="col-md-9"></div>
+	<div class="col-md-3">
+
+
+	<div class="sidebar_2_2_0">
+
+		<div class="sidebar_2_2_0__title">
+			<i class="icon-doc-text-inv"></i>
+			Dịch vụ trị rụng tóc
+		</div>
+		<div class="sidebar_2_2_0__newslq">
+			<ul>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+			</ul>
+		</div>
+
+		<div class="sidebar_2_2_0__margin"></div>
+
+		<div class="sidebar_2_2_0__title">
+			<i class="icon-picture"></i>
+			Hình ảnh trị rụng tóc
+		</div>
+		<div class="sidebar_2_2_0__newsImg">
+			<div class="owl-carousel owl-theme owl-img">
+				<div class="item">
+					<img src="media/images/sidebar_2_2_0/siba-1.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="media/images/sidebar_2_2_0/siba-1.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="media/images/sidebar_2_2_0/siba-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="sidebar_2_2_0__margin"></div>
+
+		<div class="sidebar_2_2_0__title">
+			<i class="icon-videocam"></i>
+			Video trị rụng tóc
+		</div>
+		<div class="sidebar_2_2_0__newsVideo">
+			<a href="" class="modal-clip" data-video-id="">
+				<img src="media/images/sidebar_2_2_0/siba-2.jpg" alt="">
+			</a>
+		</div>
+
+		<div class="sidebar_2_2_0__margin"></div>
+
+		<div class="sidebar_2_2_0__newsnb">
+			<div class="sb-tabs">
+				<a class="sb-tab active" data-tab="nb-1">Đọc nhiều</a>
+				<a class="sb-tab" data-tab="nb-2">Phản hồi</a>
+			</div>
+			<div id="nb-1" class="sb-box active">
+				<ul>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				</ul>
+			</div>
+			<div id="nb-2" class="sb-box">
+				<ul>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật 2</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật 2</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật 2</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+					<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="sidebar_2_2_0__margin"></div>
+
+		<div class="sidebar_2_2_0__title">
+			<i class="icon-doc-text-inv"></i>
+			Dịch vụ trị rụng tóc
+		</div>
+		<div class="sidebar_2_2_0__newslq">
+			<ul>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+			</ul>
+		</div>
+
+		<div class="sidebar_2_2_0__margin"></div>
+
+		<div class="sidebar_2_2_0__title">
+			<i class="icon-doc-text-inv"></i>
+			Dịch vụ trị rụng tóc
+		</div>
+		<div class="sidebar_2_2_0__newslq">
+			<ul>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+				<li><a href="#">Cấy tóc sinh học không phẫu thuật</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+
+	</div>
+	</div>
+</div>
+
+	<script>
+		$('.owl-img.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			items:1,
+			nav: false,
+			dots: false,
+			autoplay: true,
+			responsive: {
+			0: {
+				items: 1
+			},
+			414: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			1024: {
+				items: 1
+			},
+			}
+		});
+
+		$('.sb-tabs .sb-tab').click(function () {
+			var tab_id = $(this).attr('data-tab');
+			$('.sb-tabs .sb-tab').removeClass('active');
+			$('.sb-box.active').removeClass('active');
+			$(this).addClass('active');
+			$("#" + tab_id).addClass('active');
+		})
+	</script>
+
+</body>
+
+
+</html>

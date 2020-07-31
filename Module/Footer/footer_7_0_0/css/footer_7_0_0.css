@@ -1,0 +1,225 @@
+.footer_7_0_0 h2 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer_7_0_0 {
+  background: #005B59;
+  padding-top: 50px;
+}
+.footer_7_0_0__container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.footer_7_0_0__logo {
+  text-align: center;
+}
+.footer_7_0_0__social {
+  margin-top: 50px;
+  text-align: center;
+}
+.footer_7_0_0__social a {
+  margin: 0 10px;
+}
+.footer_7_0_0 h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer_7_0_0__info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer_7_0_0__info ul li {
+  padding-bottom: 30px;
+}
+.footer_7_0_0__info ul li a {
+  color: #fff;
+  transition: all 0.4s;
+}
+.footer_7_0_0__info ul li a p {
+  margin: 0;
+  color: #98B1B0;
+  font-weight: 600;
+}
+.footer_7_0_0__info ul li:hover a {
+  color: #EF810A;
+  transition: all 0.4s;
+}
+.footer_7_0_0__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_7_0_0__menu ul li {
+  width: 50%;
+  padding-bottom: 12px;
+}
+.footer_7_0_0__menu ul li a {
+  color: #EF810A;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.footer_7_0_0__menu ul li:hover a {
+  color: #fff;
+  transition: all 0.4s;
+}
+.footer_7_0_0__regist input {
+  padding: 15px 20px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.footer_7_0_0__regist button {
+  background: #EF810A;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.footer_7_0_0__regist button:hover {
+  background: #E0C38B;
+  transition: all 0.4s;
+  color: #333;
+}
+.footer_7_0_0__copyright {
+  background: #014D4B;
+  text-align: center;
+  color: #A6B6B5;
+  padding: 10px;
+}
+
+@media (max-width: 1440px) {
+  .footer_7_0_0__container {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .footer_7_0_0 {
+    padding-top: 30px;
+  }
+  .footer_7_0_0__container {
+    width: 95%;
+  }
+  .footer_7_0_0 h2 {
+    font-size: 16px;
+  }
+  .footer_7_0_0__social {
+    margin-top: 30px;
+  }
+  .footer_7_0_0__social a {
+    margin: 0 5px;
+  }
+  .footer_7_0_0__info ul li a {
+    font-size: 12px;
+  }
+  .footer_7_0_0__menu ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 812px) {
+  .footer_7_0_0__logo img {
+    width: 100%;
+  }
+  .footer_7_0_0__social a {
+    margin: 0 2px;
+  }
+  .footer_7_0_0__social img {
+    width: 20%;
+  }
+  .footer_7_0_0 h2 {
+    font-size: 14px;
+  }
+  .footer_7_0_0__info ul li {
+    padding-bottom: 13px;
+  }
+  .footer_7_0_0__menu ul li {
+    padding-bottom: 3px;
+  }
+  .footer_7_0_0__regist input {
+    padding: 10px;
+  }
+  .footer_7_0_0__regist button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .footer_7_0_0__copyright {
+    font-size: 14px;
+  }
+}
+@media (max-width: 414px) {
+  .footer_7_0_0 {
+    padding-top: 20px;
+  }
+  .footer_7_0_0__container {
+    width: 90%;
+  }
+  .footer_7_0_0__logo img {
+    width: 30%;
+  }
+  .footer_7_0_0__social {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .footer_7_0_0 .col-md-3:nth-child(2), .footer_7_0_0 .col-md-3:nth-child(3) {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .footer_7_0_0 h2 {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .footer_7_0_0__info ul li {
+    padding-bottom: 10px;
+  }
+  .footer_7_0_0__menu ul li {
+    padding-bottom: 2px;
+  }
+  .footer_7_0_0__menu ul li a {
+    font-size: 11px;
+  }
+  .footer_7_0_0__regist input {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  .footer_7_0_0__regist button {
+    padding: 5px;
+  }
+  .footer_7_0_0__copyright {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .footer_7_0_0 h2 {
+    font-size: 12px;
+  }
+  .footer_7_0_0__info ul li a {
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .footer_7_0_0__container {
+    width: 95%;
+  }
+  .footer_7_0_0 h2 {
+    font-size: 11px;
+  }
+  .footer_7_0_0__menu {
+    padding-left: 10px;
+  }
+  .footer_7_0_0__menu ul li a {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=footer_7_0_0.css.map */

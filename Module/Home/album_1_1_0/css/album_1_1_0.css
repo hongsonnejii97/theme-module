@@ -1,0 +1,58 @@
+.album_1_1_0__title p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+}
+
+.album_1_1_0 {
+    padding: 30px 0
+}
+
+.album_1_1_0__title p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #015440;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.album_1_1_0__title p::after {
+    display: block;
+    width: 100px;
+    border-bottom: 1px solid #ddd;
+    content: "";
+    margin-top: 10px
+}
+
+.album_1_1_0__box1 img {
+    width: 100%
+}
+
+.album_1_1_0__box2 .owl-carousel {
+    position: relative
+}
+
+.album_1_1_0__box2 .owl-carousel .owl-prev {
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 20px);
+    background: #058A66 !important
+}
+
+.album_1_1_0__box2 .owl-carousel .owl-next {
+    position: absolute;
+    right: -10px;
+    top: calc(50% - 20px);
+    background: #058A66 !important
+}
+
+@media (max-width: 414px) {
+    .album_1_1_0__title p {
+        font-size: 16px
+    }
+
+    .album_1_1_0__box2 {
+        margin-top: 20px
+    }
+}
+
+/*# sourceMappingURL=../../maps/pc/album_1_1_0.css.map */

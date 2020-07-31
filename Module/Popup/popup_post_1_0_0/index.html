@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>SCI FRAMEWORK</title>
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+  
+</head>
+
+<style>
+
+  .popup_post_1_0_0 .popup_post_1_0_0_overlay {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAMFBMVEX///8HBwcICAgUFBQXFxcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuanbkAAAAQUlEQVR4nOzOoQ0AIBDF0K5QNiC3wYUN2H8nJPkai6l5prSOdcPU2jckN8mTZEmWZEmW5EFy8f+e/g4AAAD//wMAKnM4yCLdBHkAAAAASUVORK5CYII=);
+  }
+
+  .popup_post_1_0_0_box #popup_post_1_0_0_closePopup {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMBJREFUeNqc0z0KAjEQhuFx8E5qrqFeQdBCu0WwF2zsxd7fG+QCC+reyW8kgRjza+DdIksedgLb01rfiWiPWqpfA9QwHjt0QaM/gJucF+SFxpWQBabowWbTQucC6AuQDXZeCjTJQD+Aj+SgIBBCfEjlgBjiQie0SAGy+okLFGiLDmgeA1JfYkfYoBlaO6MVI0Mzgox0dEZTpYgAV3PwGbgjlUNCAOUgLgSSEFcAUYgrAfL+tQ8kyKoSsKsz0PItwAC6cz7Ubz7EKgAAAABJRU5ErkJggg==);
+  }
+
+  .popup_post_1_0_0 {
+    font-size: 14px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  .popup_post_1_0_0 input, .popup_post_1_0_0 textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .popup_post_1_0_0__header .pic {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .popup_post_1_0_0__header .pic img {
+    width: 100%;
+  }
+  .popup_post_1_0_0__header .search {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .popup_post_1_0_0__header .search input {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    width: 40%;
+    outline: none;
+  }
+  .popup_post_1_0_0__header .search button {
+    background: none;
+    border: none;
+    color: #283f75;
+    font-size: 16px;
+    margin-left: -35px;
+    margin-top: -2px;
+    outline: none;
+  }
+  .popup_post_1_0_0__content {
+    margin-top: 20px;
+  }
+  .popup_post_1_0_0__content .title {
+    background: #283F75;
+    color: #fff;
+    position: relative;
+  }
+  .popup_post_1_0_0__content .title::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background: #EF4324;
+    top: 0;
+    left: 0;
+  }
+  .popup_post_1_0_0__content .title h2 {
+    font-size: 18px;
+    padding: 8px 0px 8px 10px;
+    font-weight: bold;
+  }
+  .popup_post_1_0_0__content .list ul {
+    list-style: none;
+    padding-left: 0;
+    overflow-y: scroll;
+    height: 260px;
+  }
+  .popup_post_1_0_0__content .list ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  .popup_post_1_0_0__content .list ul::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+  }
+  .popup_post_1_0_0__content .list ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #7F8C8D;
+  }
+  .popup_post_1_0_0__content .list ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .popup_post_1_0_0__content .list ul li a {
+    font-size: 14px;
+    color: #000;
+  }
+  .popup_post_1_0_0 .overlay_form {
+    font-size: 14px;
+  }
+  .popup_post_1_0_0 .popup_post_1_0_0_overlay {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0.7;
+  }
+  .popup_post_1_0_0_box {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+  }
+  .popup_post_1_0_0_box article {
+    background: #fff;
+    z-index: 11;
+    margin: 50px auto;
+    padding: 20px;
+    width: 550px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #00abe5;
+  }
+  @media (max-width: 320px) {
+    .popup_post_1_0_0_box article {
+      width: 300px;
+    }
+  }
+  .popup_post_1_0_0_box #popup_post_1_0_0_closePopup {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: -18px;
+    right: -24px;
+    transition: all 0.5s ease 0s;
+    font-family: arial;
+  }
+  @media (max-width: 375px) {
+    .popup_post_1_0_0_box #popup_post_1_0_0_closePopup {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .popup_post_1_0_0_box #popup_post_1_0_0_closePopup:hover {
+    transform: rotate(360deg);
+  }
+  .popup_post_1_0_0 .popup_post_1_0_0_clickPopup2 {
+    color: #fff;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    background-color: #6e2daa;
+  }
+  .popup_post_1_0_0 .popup_post_1_0_0_clickPopup2:hover {
+    background-color: #00abe2;
+    cursor: pointer;
+  }
+
+  @media (max-width: 414px) {
+    .popup_post_1_0_0_box article {
+      width: 350px;
+      margin-top: 20px;
+    }
+    .popup_post_1_0_0__header {
+      display: block;
+    }
+    .popup_post_1_0_0__header .pic {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .popup_post_1_0_0__header .search input {
+      width: 70%;
+    }
+    .popup_post_1_0_0__content .title h2 {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 375px) {
+    .pop_box article {
+      width: 345px;
+    }
+
+    .pop_box #close {
+      top: 12px;
+      right: 12px;
+    }
+
+    .pop_box #close {
+      background: url(../images/pucb-close2.png) center center no-repeat;
+    }
+  }
+  @media (max-width: 360px) {
+    .popup_post_1_0_0_box article {
+      width: 340px;
+    }
+  }
+  @media (max-width: 320px) {
+    .popup_post_1_0_0_box article {
+      width: 300px;
+    }
+    .popup_post_1_0_0__content {
+      margin-top: 10px;
+    }
+
+    .pop_fr > div:nth-child(2) .sol p {
+      margin: 3px 0;
+    }
+
+    .pop_fr {
+      padding: 8px 10px 10px;
+    }
+
+    .pop_tt p {
+      padding: 2px 30px 14px;
+      background: none;
+    }
+
+    .pop_fr > div:nth-child(2) .note {
+      display: none;
+    }
+
+    .pop_fr > div:nth-child(1) textarea {
+      height: 70px;
+    }
+  }
+
+  /*# sourceMappingURL=popup_post_1_0_0.css.map */
+
+</style>
+
+<body style="margin:0;padding:0">
+
+<div class="popup_post_1_0_0">
+  <p class="popup_post_1_0_0_clickPopup button">1900.633.988 </p>
+  <div class="popup_post_1_0_0_overlay" style="display:none"></div>
+  <div id="popup_post_1_0_0_overlayClickform" class="overlay_form" style="display:none">
+    <div class="popup_post_1_0_0_box">
+      <article>
+
+        <div class="popup_post_1_0_0__header">
+            <div class="pic">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAxCAYAAAAm0WAHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENTJCQjQ2MTQ5NjUxMUVBOEQ1REM1OUZGRTRBMjYxOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENTJCQjQ2MjQ5NjUxMUVBOEQ1REM1OUZGRTRBMjYxOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ1MkJCNDVGNDk2NTExRUE4RDVEQzU5RkZFNEEyNjE4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ1MkJCNDYwNDk2NTExRUE4RDVEQzU5RkZFNEEyNjE4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OyC/YAAACVZJREFUeNrsXAmMFEUU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
+              " alt="">
+            </div>
+            <div class="search">
+              <input type="text">
+              <button><i class="icon-search"></i></button>
+            </div>
+        </div>
+
+        <div class="popup_post_1_0_0__content">
+          <div class="title">
+            <h2>Danh sách bài viết liên quan</h2>
+          </div>
+          <div class="list">
+            <ul>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+              <li><a href="#">Trứng, sữa có nên xuất hiện trong thực đơn của người bệnh ung thư?</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <a id="popup_post_1_0_0_closePopup"></a>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    $(".popup_post_1_0_0 .popup_post_1_0_0_clickPopup,.popup_post_1_0_0_clickPopup2").click(function () {
+    $(".popup_post_1_0_0 #popup_post_1_0_0_overlayClickform").fadeIn(5);
+    $(".popup_post_1_0_0 .popup_post_1_0_0_overlay").fadeIn(500);
+  });
+
+  $(".popup_post_1_0_0 #popup_post_1_0_0_closePopup, .popup_post_1_0_0 .popup_post_1_0_0_overlay").click(function () {
+    $(".popup_post_1_0_0 #popup_post_1_0_0_overlayClickform").fadeOut(500);
+    $(".popup_post_1_0_0 .popup_post_1_0_0_overlay").fadeOut(500);
+    location.reload();
+    });
+  });
+
+</script>
+
+</html>

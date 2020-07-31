@@ -1,0 +1,87 @@
+.news_3_4_0__title p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+}
+
+.news_3_4_0__box .item::before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.news_3_4_0 {
+    padding-bottom: 30px
+}
+
+.news_3_4_0__title p {
+    background: #f7f4f4;
+    border: 1px solid #e3e3e3;
+    padding: 3px 10px;
+    display: table;
+    margin-top: -1px;
+    color: #015440;
+    text-transform: uppercase;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: 700
+}
+
+.news_3_4_0__box {
+    margin-top: 20px
+}
+
+.news_3_4_0__box .item {
+    color: #015440;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 14px;
+    transition: all 0.4s
+}
+
+.news_3_4_0__box .item img {
+    width: 100%;
+    display: block
+}
+
+.news_3_4_0__box .item::before {
+    content: "\e887";
+    color: #015440
+}
+
+.news_3_4_0__box .item:first-child::before {
+    display: none
+}
+
+.news_3_4_0__box .item:hover {
+    color: #FF8B0F;
+    transition: all 0.4s
+}
+
+@media (max-width: 414px) {
+    .news_3_4_0 {
+        padding-bottom: 0
+    }
+
+    .news_3_4_0 .row .col-md-3 {
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 0 10px
+    }
+
+    .news_3_4_0__box .item {
+        font-size: 12px
+    }
+}
+
+/*# sourceMappingURL=../../maps/pc/news_3_4_0.css.map */

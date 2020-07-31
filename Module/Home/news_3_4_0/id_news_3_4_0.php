@@ -1,0 +1,162 @@
+<?php
+
+/*NEWS 3.4.0*/
+'id_news_3_4_0' => array(
+    'key' => 'id_news_3_4_0',
+    'name' => 'news_3_4_0',
+    'label' => 'News 3.4.0',
+    'display' => 'block',
+    'sub_fields' => array(
+        /*Bắt đầu field*/
+        array(
+            'key' => 'id_news_3_4_0_tab1',
+            'label' => 'Bài Viết Quan Tâm',
+            'name' => '',
+            'type' => 'tab',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'placement' => 'top',
+            'endpoint' => 0,
+        ),
+        array(
+            'key' => 'id_news_3_4_0_tab1_sub1',
+            'label' => 'Tiêu đề',
+            'name' => 'title',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+        ),
+        array(
+            'key' => 'id_news_3_4_0_tab1_sub2',
+            'label' => 'Danh sách tin cột 1',
+            'name' => 'content1',
+            'type' => 'relationship',
+            'instructions' => 'Chọn 6 bài viết',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'post_type' => '',
+            'taxonomy' => '',
+            'filters' => array(
+                0 => 'search',
+                1 => 'post_type',
+                2 => 'taxonomy',
+            ),
+            'elements' => array(
+                0 => 'featured_image',
+            ),
+            'min' => '',
+            'max' => 6,
+            'return_format' => 'id',
+        ),
+        array(
+            'key' => 'id_news_3_4_0_tab1_sub3',
+            'label' => 'Danh sách tin cột 2',
+            'name' => 'content2',
+            'type' => 'relationship',
+            'instructions' => 'Chọn 6 bài viết',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'post_type' => '',
+            'taxonomy' => '',
+            'filters' => array(
+                0 => 'search',
+                1 => 'post_type',
+                2 => 'taxonomy',
+            ),
+            'elements' => array(
+                0 => 'featured_image',
+            ),
+            'min' => '',
+            'max' => 6,
+            'return_format' => 'id',
+        ),
+        array(
+            'key' => 'id_news_3_4_0_tab1_sub4',
+            'label' => 'Danh sách tin cột 3',
+            'name' => 'content3',
+            'type' => 'relationship',
+            'instructions' => 'Chọn 6 bài viết',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'post_type' => '',
+            'taxonomy' => '',
+            'filters' => array(
+                0 => 'search',
+                1 => 'post_type',
+                2 => 'taxonomy',
+            ),
+            'elements' => array(
+                0 => 'featured_image',
+            ),
+            'min' => '',
+            'max' => 6,
+            'return_format' => 'id',
+        ),
+        array(
+            'key' => 'id_news_3_4_0_tab1_sub5',
+            'label' => 'Danh sách tin cột 4',
+            'name' => 'content4',
+            'type' => 'relationship',
+            'instructions' => 'Chọn 6 bài viết',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'post_type' => '',
+            'taxonomy' => '',
+            'filters' => array(
+                0 => 'search',
+                1 => 'post_type',
+                2 => 'taxonomy',
+            ),
+            'elements' => array(
+                0 => 'featured_image',
+            ),
+            'min' => '',
+            'max' => 6,
+            'return_format' => 'id',
+        ),
+
+        /*End field*/
+    ),
+    'min' => '',
+    'max' => '',
+),
+/*END NEWS 3.4.0*/
+
+?>

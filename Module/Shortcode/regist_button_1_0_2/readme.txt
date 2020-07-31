@@ -1,0 +1,1 @@
+include ('shortcode/regist_button_1_0_0/regist_button_1_0_1.php');

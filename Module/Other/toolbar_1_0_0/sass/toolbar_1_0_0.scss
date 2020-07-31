@@ -1,0 +1,183 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+%font1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+$color1:#004689;
+%icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.toolbar_1_0_0{
+    display: none;
+    z-index: 10;
+    &__tabs{
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        background: #fff;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        border: 1px solid #ccc;
+        box-shadow: -2px -1px 3px #ccc;
+        a{
+            padding: 5px 0 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align : center;
+            font-weight: bold;
+            &.current{
+                .pic{
+                    .svg{
+                        fill: #EF4324;
+                    }
+                }
+                .title{
+                    color: #EF4324;
+                }
+            }
+        }
+    }
+    &__ques{
+        z-index: 10;
+        position: fixed;
+        bottom: 200px;
+        right: 0;
+        background: #EF4324;
+        color: #fff;
+        padding: 5px 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-size: 12px;
+        -webkit-animation: ring 8s .7s ease-in-out infinite;
+        -webkit-transform-origin: 50% 4px;
+        -moz-animation: ring 8s .7s ease-in-out infinite;
+        -moz-transform-origin: 50% 4px;
+        animation: ring 8s .7s ease-in-out infinite;
+        transform-origin: 50% 4px;
+    }
+}
+
+@media #{$r414}{
+    .toolbar_1_0_0{
+        display: block;
+    }
+}
+
+@media #{$r360}{
+    .toolbar_1_0_0{
+        &__tabs{
+            .title{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes ring {
+    0% { -webkit-transform: rotate(0); }
+    1% { -webkit-transform: rotate(1deg); }
+    3% { -webkit-transform: rotate(-1deg); }
+    5% { -webkit-transform: rotate(1deg); }
+    7% { -webkit-transform: rotate(-1deg); }
+    9% { -webkit-transform: rotate(1deg); }
+    11% { -webkit-transform: rotate(-1deg); }
+    13% { -webkit-transform: rotate(1deg); }
+    15% { -webkit-transform: rotate(-1deg); }
+    17% { -webkit-transform: rotate(1deg); }
+    19% { -webkit-transform: rotate(-1deg); }
+    21% { -webkit-transform: rotate(1deg); }
+    23% { -webkit-transform: rotate(-1deg); }
+    25% { -webkit-transform: rotate(1deg); }
+    27% { -webkit-transform: rotate(-1deg); }
+    29% { -webkit-transform: rotate(1deg); }
+    31% { -webkit-transform: rotate(-1deg); }
+    33% { -webkit-transform: rotate(1deg); }
+    35% { -webkit-transform: rotate(-1deg); }
+    37% { -webkit-transform: rotate(1deg); }
+    39% { -webkit-transform: rotate(-1deg); }
+    41% { -webkit-transform: rotate(1deg); }
+    43% { -webkit-transform: rotate(0); }
+    100% { -webkit-transform: rotate(0); }
+}
+
+@-moz-keyframes ring {
+    0% { -moz-transform: rotate(0); }
+    1% { -moz-transform: rotate(1deg); }
+    3% { -moz-transform: rotate(-1deg); }
+    5% { -moz-transform: rotate(1deg); }
+    7% { -moz-transform: rotate(-1deg); }
+    9% { -moz-transform: rotate(1deg); }
+    11% { -moz-transform: rotate(-1deg); }
+    13% { -moz-transform: rotate(1deg); }
+    15% { -moz-transform: rotate(-1deg); }
+    17% { -moz-transform: rotate(1deg); }
+    19% { -moz-transform: rotate(-1deg); }
+    21% { -moz-transform: rotate(1deg); }
+    23% { -moz-transform: rotate(-1deg); }
+    25% { -moz-transform: rotate(1deg); }
+    27% { -moz-transform: rotate(-1deg); }
+    29% { -moz-transform: rotate(1deg); }
+    31% { -moz-transform: rotate(-1deg); }
+    33% { -moz-transform: rotate(1deg); }
+    35% { -moz-transform: rotate(-1deg); }
+    37% { -moz-transform: rotate(1deg); }
+    39% { -moz-transform: rotate(-1deg); }
+    41% { -moz-transform: rotate(1deg); }
+    43% { -moz-transform: rotate(0); }
+    100% { -moz-transform: rotate(0); }
+}
+
+@keyframes ring {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(1deg); }
+    3% { transform: rotate(-1deg); }
+    5% { transform: rotate(1deg); }
+    7% { transform: rotate(-1deg); }
+    9% { transform: rotate(1deg); }
+    11% { transform: rotate(-1deg); }
+    13% { transform: rotate(1deg); }
+    15% { transform: rotate(-1deg); }
+    17% { transform: rotate(1deg); }
+    19% { transform: rotate(-1deg); }
+    21% { transform: rotate(1deg); }
+    23% { transform: rotate(-1deg); }
+    25% { transform: rotate(1deg); }
+    27% { transform: rotate(-1deg); }
+    29% { transform: rotate(1deg); }
+    31% { transform: rotate(-1deg); }
+    33% { transform: rotate(1deg); }
+    35% { transform: rotate(-1deg); }
+    37% { transform: rotate(1deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+}

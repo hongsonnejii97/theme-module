@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module Kangnam</title>
+    <link rel="stylesheet" href="../../media/css/style.css">
+    <link rel="stylesheet" href="css/banner_1_0_0.css">
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<style>
+    .album_1_1_0__title p {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+    }
+
+    .album_1_1_0 {
+        padding: 30px 0
+    }
+
+    .album_1_1_0__title p {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #015440;
+        padding-bottom: 10px;
+        margin-bottom: 10px
+    }
+
+    .album_1_1_0__title p::after {
+        display: block;
+        width: 100px;
+        border-bottom: 1px solid #ddd;
+        content: "";
+        margin-top: 10px
+    }
+
+    .album_1_1_0__box1 img {
+        width: 100%
+    }
+
+    .album_1_1_0__box2 .owl-carousel {
+        position: relative
+    }
+
+    .album_1_1_0__box2 .owl-carousel .owl-prev {
+        position: absolute;
+        left: -10px;
+        top: calc(50% - 20px);
+        background: #058A66 !important
+    }
+
+    .album_1_1_0__box2 .owl-carousel .owl-next {
+        position: absolute;
+        right: -10px;
+        top: calc(50% - 20px);
+        background: #058A66 !important
+    }
+
+    @media (max-width: 414px) {
+        .album_1_1_0__title p {
+            font-size: 16px
+        }
+
+        .album_1_1_0__box2 {
+            margin-top: 20px
+        }
+    }
+</style>
+
+<body>
+
+<section class="album_1_1_0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="album_1_1_0__box1">
+                    <div class="album_1_1_0__title">
+                        <p>VIDEO TRỊ RỤNG TÓC, CẤY TÓC</p>
+                    </div>
+                    <a href="" class="modal-clip" data-video-id="">
+                        <img src="media/images/album_1_1_0/video-1a.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="album_1_1_0__box2">
+                    <div class="album_1_1_0__title">
+                        <p>HÌNH ẢNH TRỊ RỤNG TÓC</p>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="media/images/album_1_1_0/photo-1a.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="media/images/album_1_1_0/photo-1a.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="media/images/album_1_1_0/photo-1a.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script>
+    $('.album_1_1_0 .owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        items:1,
+        nav: true,
+        dots: false,
+        responsive: {
+        0: {
+            items: 1
+        },
+        414: {
+            items: 1
+        },
+        768: {
+            items: 1
+        },
+        1024: {
+            items: 1
+        },
+        }
+    });
+</script>
+
+
+</html>
